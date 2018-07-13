@@ -2,7 +2,8 @@ var express = require('express');
 
 var app = express();
 
-var port = process.env.PORT || 3000;
+app.listen(process.env.PORT || 3000)
+//var port = process.env.PORT || 3000;
 
 // default run time
  app.get('/', function(req, res) {
@@ -11,6 +12,5 @@ var port = process.env.PORT || 3000;
 
 //app.use(express.static(__dirname + '/public'));
 
-app.listen(3000);
 
-console.log("Server is runing " +port);
+//console.log("Server is runing " +port);
