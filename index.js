@@ -6,11 +6,11 @@ app.listen(process.env.PORT || 3000)
 //var port = process.env.PORT || 3000;
 
 // default run time
- app.get('/', function(req, res) {
- 	res.send("Welcome");
- });
+//  app.get('/', function(req, res) {
+//  	res.send("Welcome");
+//  });
 
-//app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 
-//console.log("Server is runing " +port);
+console.log("Server is runing ");
